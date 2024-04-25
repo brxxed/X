@@ -25,6 +25,24 @@
         </Grid>
         <Button Content="X" HorizontalAlignment="Left" Margin="713,43,0,0" VerticalAlignment="Top" Width="30" Height="28" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1" RenderTransformOrigin="0.567,0.536" Click="Button_Click"/>
         <Button Content="-" HorizontalAlignment="Left" Margin="685,43,0,0" VerticalAlignment="Top" Width="28" Height="28" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click_1"/>
+        <Button x:Name="lis" Content="Life is Strange: True Colors" HorizontalAlignment="Left" Margin="39,164,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
+        <Frame Grid.Column="1" Content="Click on a game to view." Margin="0,164,0,0" NavigationUIVisibility="Hidden" Foreground="White" Background="White"/>
+        <Button x:Name="Undertale" Content="Undertale" HorizontalAlignment="Left" Margin="39,184,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
+        <Image Margin="40,165,242,312" Source="/GameIcons/LifeIsStrangeTrueColors.ico" Stretch="Fill" RenderTransformOrigin="0.5,-0.104"/>
+        <Image Margin="40,186,242,294" Source="/GameIcons/Undertale.ico" Stretch="Fill"/>
+        <Button x:Name="Cyberpunk2077" Content="Cyberpunk 2077" HorizontalAlignment="Left" Margin="39,204,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
+        <Image Margin="40,205,242,273" Source="/GameIcons/Cyberpunk2077.ico" Stretch="Fill"/>
+        <Button x:Name="SpiderMan" Content="Spider-Man: Miles Morales" HorizontalAlignment="Left" Margin="39,223,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
+        <Image Margin="40,224,242,254" Source="/GameIcons/SpiderMan.ico" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Page>
        
