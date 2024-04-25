@@ -1,0 +1,13 @@
+﻿<Window x:Class="brxxedXClient.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:brxxedXClient"
+        mc:Ignorable="d"
+        Title="Main" Height="616" Width="1164" WindowStyle="None" WindowState="Normal" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF191717">
+        <Frame x:Name="PageFrame" Content="" NavigationUIVisibility="Hidden" Source="/Pages/HomePage.xaml" Background="Black" Margin="0,0,0,-100"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>X (1).ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="update1.0.1_x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="X (1).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="update1.0.1_x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Pages\LibraryPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
