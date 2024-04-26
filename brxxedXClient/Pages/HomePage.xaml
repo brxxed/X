@@ -12,16 +12,16 @@
         <DropShadowEffect />
     </UIElement.Effect>
     <Grid Background="#FF191717" Margin="0,-46,-156,0">
-        <Grid.ColumnDefinitions>
+       <Grid.ColumnDefinitions>
             <ColumnDefinition Width="151*"/>
             <ColumnDefinition Width="327*"/>
         </Grid.ColumnDefinitions>
         <Grid x:Name="TopGrid" Margin="31,64,108,356" Grid.ColumnSpan="2">
             <Label x:Name="brxxedLauncherLabel" Content="brxxed X" HorizontalAlignment="Left" Margin="5,3,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontFamily="Exo 2" FontWeight="Bold" FontSize="20" Height="30" />
-            <Button x:Name="ButtonDonate" Content="Donate" HorizontalAlignment="Left" Margin="9,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonDonate_Click" />
-            <Button x:Name="ButtonLibrary" Content="Library" HorizontalAlignment="Left" Margin="361,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonLibrary_Click" />
+            <Button x:Name="ButtonDonate" Content="DONATE" HorizontalAlignment="Left" Margin="9,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonDonate_Click" />
+            <Button x:Name="ButtonLibrary" Content="LIBRARY" HorizontalAlignment="Left" Margin="361,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonLibrary_Click" />
             <Button x:Name="ButtonSettings" Content="Settings" HorizontalAlignment="Left" Margin="103,12,0,0" VerticalAlignment="Top" Height="16" Width="96" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="11" Click="ButtonSettings_Click" />
-            <Button x:Name="ButtonHome" Content="Home" HorizontalAlignment="Left" Margin="185,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonLibrary_Click" />
+            <Button x:Name="ButtonHome" Content="HOME" HorizontalAlignment="Left" Margin="185,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonLibrary_Click" />
         </Grid>
         <Grid Margin="44,145,-466,282" Grid.ColumnSpan="2">
             <Label Content="welcome to brxxed X" HorizontalAlignment="Left" Margin="2,-6,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontFamily="Exo 2" FontSize="40" RenderTransformOrigin="0.549,0.034" Height="58" Width="402" />

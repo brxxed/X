@@ -12,29 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using brxxedXClient.Pages.GamePages;
 
-namespace brxxedXClient.Pages
+namespace brxxedXClient.Pages.GamePages
 {
     /// <summary>
-    /// Interaction logic for LibraryPage.xaml
+    /// Interaction logic for LifeIsStrange3.xaml
     /// </summary>
-    public partial class LibraryPage : Page
+    public partial class LifeIsStrange3 : Page
     {
-        public LibraryPage()
+        public LifeIsStrange3()
         {
             InitializeComponent();
         }
-        private void ButtonLibrary_Click(object sender, RoutedEventArgs e)
-        {
-            HomePage libPage = new HomePage();
-            NavigationService.Navigate(libPage);
-        }
 
-        private void ButtonHome_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
         {
@@ -44,6 +34,22 @@ namespace brxxedXClient.Pages
         private void ButtonDonate_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ButtonLibrary_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void lis_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Install_Click(object sender, RoutedEventArgs e)
+        {
+            InstallationWindow_LifeIsStrange3 lisinstall = new InstallationWindow_LifeIsStrange3();
+            lisinstall.Show(); 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -56,12 +62,5 @@ namespace brxxedXClient.Pages
             Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
 
-        private void lis_Click(object sender, RoutedEventArgs e)
-        {
-            LifeIsStrange3 lis = new LifeIsStrange3();
-            NavigationService.Navigate(lis);
-
-        }
     }
 }
-

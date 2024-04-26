@@ -1,0 +1,15 @@
+﻿<Window x:Class="brxxedXClient.Pages.GamePages.InstallationWindow_LifeIsStrange3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:brxxedXClient.Pages.GamePages"
+        mc:Ignorable="d"
+        Title="Install Life is Strange: True Colors | brxxed" Height="450" Width="292" Background="#FF4A4A4A" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="54" Margin="92,10,0,0" VerticalAlignment="Top" Width="92" Source="/GameLogos/LifeIsStrange3Logo.png"/>
+        <Button Content="Start Installing" HorizontalAlignment="Left" Margin="74,119,0,0" VerticalAlignment="Top" Width="128" Click="Button_Click"/>
+        <Label x:Name="Inst" Content="Ready to install" Margin="0,58,0,0" VerticalAlignment="Top" Foreground="White" Width="290" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
