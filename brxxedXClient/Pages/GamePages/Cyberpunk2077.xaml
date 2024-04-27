@@ -31,7 +31,7 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="685,43,0,0" VerticalAlignment="Top" Width="28" Height="28" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click_1"/>
         <Button x:Name="lis" Content="Life is Strange: True Colors" HorizontalAlignment="Left" Margin="39,164,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold" Click="lis_Click"/>
         <Button x:Name="Undertale" Content="Undertale (DISABLED)" HorizontalAlignment="Left" Margin="39,184,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
-        <Button x:Name="Cyberpunk2077" Content="Cyberpunk 2077" HorizontalAlignment="Left" Margin="39,204,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
+        <Button x:Name="PageCyberpunk2077" Content="Cyberpunk 2077" HorizontalAlignment="Left" Margin="39,204,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
         <Button x:Name="SpiderMan" Content="Spider-Man: Miles Morales" HorizontalAlignment="Left" Margin="39,223,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
         <Grid Margin="292,118,10,26" Grid.ColumnSpan="2">
             <Grid Margin="0,258,0,-21">
