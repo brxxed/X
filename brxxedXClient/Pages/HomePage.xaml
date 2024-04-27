@@ -1,0 +1,36 @@
+﻿<Page x:Class="brxxedXClient.Pages.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:brxxedXClient.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HomePage">
+
+    <UIElement.Effect>
+        <DropShadowEffect />
+    </UIElement.Effect>
+    <Grid Background="#FF191717" Margin="0,-46,-156,0">
+       <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="327*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="TopGrid" Margin="31,64,108,356" Grid.ColumnSpan="2">
+            <Label x:Name="brxxedLauncherLabel" Content="brxxed X" HorizontalAlignment="Left" Margin="5,3,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontFamily="Exo 2" FontWeight="Bold" FontSize="20" Height="30" />
+            <Button x:Name="ButtonDonate" Content="DONATE" HorizontalAlignment="Left" Margin="9,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonDonate_Click" />
+            <Button x:Name="ButtonLibrary" Content="LIBRARY" HorizontalAlignment="Left" Margin="361,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonLibrary_Click" />
+            <Button x:Name="ButtonSettings" Content="Settings" HorizontalAlignment="Left" Margin="103,12,0,0" VerticalAlignment="Top" Height="16" Width="96" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="11" Click="ButtonSettings_Click" />
+            <Button x:Name="ButtonHome" Content="HOME" HorizontalAlignment="Left" Margin="185,38,0,0" VerticalAlignment="Top" Height="32" Width="172" RenderTransformOrigin="1.771,-3" FontFamily="Exo 2" Background="#FF924040" FontSize="20" Click="ButtonLibrary_Click" />
+        </Grid>
+        <Grid Margin="44,145,-466,282" Grid.ColumnSpan="2">
+            <Label Content="welcome to brxxed X" HorizontalAlignment="Left" Margin="2,-6,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontFamily="Exo 2" FontSize="40" RenderTransformOrigin="0.549,0.034" Height="58" Width="402" />
+            <Label x:Name="timeLabel" Content="10:08 AM" HorizontalAlignment="Left" Margin="2,41,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontFamily="Exo 2" FontSize="16" FontWeight="Bold" Height="28" Width="510" />
+        </Grid>
+        <Label x:Name="updLabel" Content="Latest Update" HorizontalAlignment="Left" Margin="44,214,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontFamily="Exo 2" FontSize="20" RenderTransformOrigin="0.549,0.034" Height="42" Width="402" Grid.ColumnSpan="2" />
+        <Label x:Name="updLabel_Copy" Content="1.0.0 RELEASE BETA" HorizontalAlignment="Left" Margin="44,235,0,0" VerticalAlignment="Top" Foreground="#FFFFFFFF" FontFamily="Exo 2" FontSize="20" RenderTransformOrigin="0.549,0.034" Height="42" Width="402" Grid.ColumnSpan="2" />
+        <Button Content="X" HorizontalAlignment="Left" Margin="713,43,0,0" VerticalAlignment="Top" Width="30" Height="28" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1" RenderTransformOrigin="0.567,0.536" Click="Button_Click"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="685,43,0,0" VerticalAlignment="Top" Width="28" Height="28" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click_1"/>
+    </Grid>
+</Page>
+       

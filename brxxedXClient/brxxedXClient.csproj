@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>X (1).ico</ApplicationIcon>
+    <UseWindowsForms>False</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="GameLogos\Cyberpunk2077Logo.png" />
+    <None Remove="GameLogos\SpiderManMilesMoralesLogo.png" />
+    <None Remove="update1.0.1_x.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="X (1).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="update1.0.1_x.png" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Resource Include="downloading-updates-48.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+     <Content Include="GameHeros\*">
+       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+     <Content Include="GameIcons\*">
+       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+     </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+     <Content Include="GameLogos\*">
+       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+     </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Notifications.Wpf" Version="0.1.1" />
+    <PackageReference Include="sharpcompress" Version="0.37.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+</Project>
