@@ -1,4 +1,5 @@
-﻿using System;
+﻿using brxxedXClient.InstallationWindow;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,15 +17,14 @@ using System.Windows.Shapes;
 namespace brxxedXClient.Pages.GamePages
 {
     /// <summary>
-    /// Interaction logic for LifeIsStrange3.xaml
+    /// Interaction logic for SpiderManMilesMorales.xaml
     /// </summary>
-    public partial class LifeIsStrange3 : Page
+    public partial class SpiderManMilesMorales : Page
     {
-        public LifeIsStrange3()
+        public SpiderManMilesMorales()
         {
             InitializeComponent();
         }
-
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
         {
@@ -54,8 +54,8 @@ namespace brxxedXClient.Pages.GamePages
 
         private void Install_Click(object sender, RoutedEventArgs e)
         {
-            InstallationWindow_LifeIsStrange3 lisinstall = new InstallationWindow_LifeIsStrange3();
-            lisinstall.Show(); 
+            InstallationWindow_SpiderManMilesMorales lisinstall = new InstallationWindow_SpiderManMilesMorales();
+            lisinstall.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -70,7 +70,7 @@ namespace brxxedXClient.Pages.GamePages
 
         private void Undertale_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
     }
 }

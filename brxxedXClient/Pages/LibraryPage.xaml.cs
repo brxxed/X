@@ -27,13 +27,13 @@ namespace brxxedXClient.Pages
         }
         private void ButtonLibrary_Click(object sender, RoutedEventArgs e)
         {
-            HomePage libPage = new HomePage();
-            NavigationService.Navigate(libPage);
+
         }
 
         private void ButtonHome_Click(object sender, RoutedEventArgs e)
         {
-
+            HomePage libPage = new HomePage();
+            NavigationService.Navigate(libPage);
         }
 
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)

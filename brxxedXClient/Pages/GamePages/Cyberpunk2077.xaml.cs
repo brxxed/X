@@ -1,4 +1,5 @@
-﻿using System;
+﻿using brxxedXClient.InstallationWindow;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,22 +17,16 @@ using System.Windows.Shapes;
 namespace brxxedXClient.Pages.GamePages
 {
     /// <summary>
-    /// Interaction logic for LifeIsStrange3.xaml
+    /// Interaction logic for Cyberpunk2077.xaml
     /// </summary>
-    public partial class LifeIsStrange3 : Page
+    public partial class Cyberpunk2077 : Page
     {
-        public LifeIsStrange3()
+        public Cyberpunk2077()
         {
             InitializeComponent();
         }
 
-
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ButtonDonate_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -54,8 +49,8 @@ namespace brxxedXClient.Pages.GamePages
 
         private void Install_Click(object sender, RoutedEventArgs e)
         {
-            InstallationWindow_LifeIsStrange3 lisinstall = new InstallationWindow_LifeIsStrange3();
-            lisinstall.Show(); 
+            InstallationWindow_Cyberpunk2077 lisinstall = new InstallationWindow_Cyberpunk2077();
+            lisinstall.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -68,9 +63,5 @@ namespace brxxedXClient.Pages.GamePages
             Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
 
-        private void Undertale_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
     }
 }

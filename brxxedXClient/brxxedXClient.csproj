@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
@@ -11,6 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="GameLogos\Cyberpunk2077Logo.png" />
+    <None Remove="GameLogos\SpiderManMilesMoralesLogo.png" />
     <None Remove="update1.0.1_x.png" />
   </ItemGroup>
 
@@ -44,5 +46,12 @@
      <Content Include="GameLogos\*">
        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
      </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Notifications.Wpf" Version="0.1.1" />
+    <PackageReference Include="sharpcompress" Version="0.37.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
   </ItemGroup>
 </Project>

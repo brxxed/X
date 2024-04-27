@@ -1,6 +1,11 @@
-﻿using System;
+﻿using Notifications.Wpf;
+using SharpCompress.Archives.Rar;
+using SharpCompress.Common;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,27 +16,16 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Web;
-using System.Net;
-using System.ComponentModel;
-using System.Security.Cryptography.X509Certificates;
-using System.Runtime.CompilerServices;
-using Notifications.Wpf;
-using SharpCompress.Archives.Rar;
-using SharpCompress.Common;
-using SharpCompress;
 using SharpCompress.Archives;
-using System.IO;
 
-
-namespace brxxedXClient.Pages.GamePages
+namespace brxxedXClient.InstallationWindow
 {
     /// <summary>
-    /// Interaction logic for InstallationWindow_LifeIsStrange3.xaml
+    /// Interaction logic for InstallationWindow_SpiderManMilesMorales.xaml
     /// </summary>
-    public partial class InstallationWindow_LifeIsStrange3 : Window
+    public partial class InstallationWindow_SpiderManMilesMorales : Window
     {
-        public InstallationWindow_LifeIsStrange3()
+        public InstallationWindow_SpiderManMilesMorales()
         {
             InitializeComponent();
         }
@@ -40,14 +34,14 @@ namespace brxxedXClient.Pages.GamePages
         {
             using (WebClient myWebClient = new WebClient())
             {
-                myWebClient.DownloadFileAsync(new Uri("https://onedrive.live.com/download?resid=3404EE6DFFA6DC43%2168258&authkey=!AD1nECuOiPeBerM"), "LifeIsStrange3.rar");
+                myWebClient.DownloadFileAsync(new Uri("https://onedrive.live.com/download?resid=3404EE6DFFA6DC43%2168257&authkey=!ALCm81uzILCs"), "SpiderManMilesMorales.rar");
                 this.Inst.Content = "Downloading from brxxed servers";
                 myWebClient.DownloadDataCompleted += DownloadCompleted;
                 var notificationManager = new NotificationManager();
 
                 notificationManager.Show(new NotificationContent
                 {
-                    Title = "Life is Strange: True Colors",
+                    Title = "Spider-Man Miles Morales",
                     Message = "brxxed X \n Now downloading",
                     Type = NotificationType.Information
                 });
@@ -64,7 +58,7 @@ namespace brxxedXClient.Pages.GamePages
 
             notificationManager.Show(new NotificationContent
             {
-                Title = "Life is Strange: True Colors",
+                Title = "Spider-Man Miles Morales",
                 Message = "brxxed X \n Extracting",
                 Type = NotificationType.Information
             });
@@ -73,20 +67,18 @@ namespace brxxedXClient.Pages.GamePages
         }
         private void ExtractGame()
         {
-            using (var archive = RarArchive.Open("LifeIsStrange3.rar"))
+            using (var archive = RarArchive.Open("SpiderManMilesMorales.rar"))
             {
                 foreach (var entry in archive.Entries.Where(entry => !entry.IsDirectory))
                 {
-                    entry.Archive.WriteToDirectory("C:\\Program Files (x86)\\brxxed\\X\\apps\\installed\\LifeIsStrange3", new ExtractionOptions()
+                    entry.Archive.WriteToDirectory("C:\\Program Files (x86)\\brxxed\\X\\apps\\installed\\Spider-Man Miles Morales", new ExtractionOptions()
                     {
                         ExtractFullPath = true,
                         Overwrite = true
                     });
-   
+
                 }
             }
         }
     }
 }
-
-
