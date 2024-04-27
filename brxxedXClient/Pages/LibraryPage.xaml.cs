@@ -62,6 +62,21 @@ namespace brxxedXClient.Pages
             NavigationService.Navigate(lis);
 
         }
+
+
+        private void Cyberpunk2077_Click(object sender, RoutedEventArgs e)
+        {
+            Cyberpunk2077 lis = new Cyberpunk2077();
+            NavigationService.Navigate(lis);
+
+        }
+
+        private void SpiderMan_Click(object sender, RoutedEventArgs e)
+        {
+            SpiderManMilesMorales lis = new SpiderManMilesMorales();
+            NavigationService.Navigate(lis);
+
+        }
     }
 }
 

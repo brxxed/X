@@ -27,7 +27,7 @@
         <Button Content="-" HorizontalAlignment="Left" Margin="685,43,0,0" VerticalAlignment="Top" Width="28" Height="28" FontWeight="Bold" FontSize="16" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}" Grid.Column="1" Click="Button_Click_1"/>
         <Button x:Name="lis" Content="Life is Strange: True Colors" HorizontalAlignment="Left" Margin="39,164,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold" Click="lis_Click"/>
         <Button x:Name="Undertale" Content="Undertale (DISABLED)&#xD;&#xA;Undertale [DISABLED]" HorizontalAlignment="Left" Margin="39,184,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
-        <Button x:Name="Cyberpunk2077" Content="Cyberpunk 2077" HorizontalAlignment="Left" Margin="39,204,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
+        <Button x:Name="Cyberpunk2077" Content="Cyberpunk 2077" HorizontalAlignment="Left" Margin="39,204,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold" Click="Cyberpunk2077_Click"/>
         <Button x:Name="SpiderMan" Content="Spider-Man: Miles Morales" HorizontalAlignment="Left" Margin="39,223,0,0" VerticalAlignment="Top" Width="263" FontFamily="Segoe UI Semibold"/>
         <DockPanel LastChildFill="False" Margin="0,0,276,0"/>
         <Image HorizontalAlignment="Left" Height="19" Margin="40,165,0,0" VerticalAlignment="Top" Width="18" Source="/GameIcons/LifeIsStrangeTrueColors.ico" RenderTransformOrigin="-3.293,-3"/>
@@ -38,3 +38,5 @@
     </Grid>
 </Page>
        
+
+  

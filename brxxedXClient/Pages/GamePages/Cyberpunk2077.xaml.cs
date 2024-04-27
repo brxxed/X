@@ -63,5 +63,9 @@ namespace brxxedXClient.Pages.GamePages
             Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
 
+        private void ButtonDonate_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
