@@ -1,0 +1,50 @@
+<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:x.brxxed.UI.Views.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:x.brxxed.UI.Models"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:Helpers="clr-namespace:x.brxxed.UI.Helpers"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    x:Class="x.brxxed.UI.Views.Pages.DataPage"
+    Title="DataPage"
+    d:DataContext="{d:DesignInstance {x:Type local:DataPage}, IsDesignTimeCreatable=False}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    ScrollViewer.CanContentScroll="False"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter"/>
+    </Page.Resources>
+
+    <Grid InputScope="Xml">
+        <Grid.Resources>
+            <ui:ContextMenuLoader/>
+        </Grid.Resources>
+        <ui:DynamicScrollViewer Margin="0,0,590,0">
+            <ui:DynamicScrollViewer.Resources>
+                <ui:MenuLoader/>
+            </ui:DynamicScrollViewer.Resources>
+            <ui:DropDownButton x:Name="Dropdown" Width="210" Click="Button_Click" Height="38" Background="{x:Null}" Foreground="#E4FFFFFF" Content="Select game">
+                <ui:DropDownButton.ContextMenu>
+                    <ContextMenu>
+                        <ui:MenuItem Header="Life is Strange: True Colors"/>
+                        <ui:MenuItem Header="Testing"/>
+                    </ContextMenu>
+                </ui:DropDownButton.ContextMenu>
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <i:ChangePropertyAction TargetObject="{Binding ContextMenu, ElementName=Dropdown}" PropertyName="PlacementTarget" Value="{Binding ElementName=addButton, Mode=OneWay}"/>
+                        <i:ChangePropertyAction TargetObject="{Binding ContextMenu, ElementName=Dropdown}" PropertyName="IsOpen" Value="True"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </ui:DropDownButton>
+        </ui:DynamicScrollViewer>
+    </Grid>
+</Page>
